@@ -31,11 +31,9 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "prerender": {
-              "discoverRoutes": false
-            },
+            "outputMode": "server",
             "ssr": {
-              "entry": "server.ts"
+              "entry": "src/server.ts"
             }
           },
           "configurations": {

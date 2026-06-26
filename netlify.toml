@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "dist/pokemon-ssr/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
