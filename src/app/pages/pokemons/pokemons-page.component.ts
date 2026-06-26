@@ -48,7 +48,7 @@ export default class PokemonsPageComponent implements OnInit {
     this.pokemonsService
       .loadPage(pageToLoad)
       .pipe(
-        tap(() =>
+        tap(() =>                                                                  //para disparar el efecto secundario de cambiar la pagina
           this.router.navigate([], { queryParams: { page: pageToLoad } })         //funciona la paginacion
         ),
         tap(() => this.title.setTitle(`Pokémons SSR - Page ${pageToLoad}`))
