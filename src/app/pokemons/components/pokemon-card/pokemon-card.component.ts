@@ -19,7 +19,7 @@ import { RouterLink } from '@angular/router';
 export class PokemonCardComponent {
   public pokemon = input.required<SimplePokemon>();
 
-  public readonly pokemonImage = computed(
+  public readonly pokemonImage = computed(                 //senal computada
     () =>
       `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
         this.pokemon().id

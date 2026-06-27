@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`AppComponent should match snapshot 1`] = `"<app-navbar><nav class="text-white gap-4 top-0 absolute z-50 w-full flex justify-end px-2 py-3 bg-slate-900 shadow-md"><a routerlinkactive="text-blue-500 underline" routerlink="/pokemons" class="hover:underline">Pokémons</a><a routerlinkactive="text-blue-500 underline" class="hover:underline">About</a><a routerlinkactive="text-blue-500 underline" routerlink="/pricing" class="hover:underline">Pricing</a><a routerlinkactive="text-blue-500 underline" routerlink="/contact" class="hover:underline">Contact</a></nav></app-navbar><div class="max-w-3xl m-auto mt-16 px-2"><router-outlet></router-outlet><!--container--></div>"`;

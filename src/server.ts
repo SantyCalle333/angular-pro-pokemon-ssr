@@ -19,7 +19,7 @@ export async function netlifyAppEngineHandler(request: Request): Promise<Respons
   const result = await angularAppEngine.handle(request, context);
   // Si Angular no maneja la ruta dinámicamente (por ejemplo, porque es una ruta pre-renderizada estática),
   // result será null. En ese caso, le decimos a Netlify que busque el archivo estático usando context.next().
-  return result || context.next();
+  return result || (context && context.next ? context.next() : new Response('Not found', { status: 404 }));
 }
 
 /**

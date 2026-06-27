@@ -3,6 +3,8 @@ import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { PokeAPIResponse, Pokemon, SimplePokemon } from '../interfaces';
 
+//peticiones http
+
 @Injectable({
   providedIn: 'root',
 })

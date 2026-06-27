@@ -22,7 +22,8 @@
       "ES2022",
       "dom",
       "dom.iterable"
-    ]
+    ],
+    "types": ["jest", "node"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
